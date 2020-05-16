@@ -1,3 +1,9 @@
+
+#* This program receives multiple arguments and then converts those arguments into hashes through SHA1 algorithm
+#* Then it sends the first 5 char (in order to improve security) of the hash converted to an API called pwnedpasswords
+#* Which returns passwords/ hashes with the same first 5 chars with their counts of how many times they have been breached
+#* Then this prog matches all the returned hashes with the hash that we created earlier and prints how many times the password was hacked.
+
 import requests
 import hashlib
 import sys
